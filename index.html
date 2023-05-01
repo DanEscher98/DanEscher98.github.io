@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <title>YOUR NAME Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
- </head>
- <body>
-   <nav>
-     <ul>
-       <li><a href=”/”>Home</a></li>
-       <li><a href=”/about”>About</a></li>
-       <li><a href=”/resume”>Resume</a></li>
-       <li><a href=”/blog”>Blog</a></li>
-     </ul>
-   </nav>
-   <div class=”container”>
-     <div class=”blurb”>
-       <h1>Hi, I am YOUR NAME!</h1>
-       <p>This is my first page for my personal website!</a></p>
-     </div>
-   </div>
-   <footer>
-   <ul>
-     <li><a href=”mailto:YOUREMAIL”>YOUREMAIL</a></li>
-   </ul>
-   </footer>
- </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOUR NAME Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+</script>
+<script src="js/script.js"></script>
+<nav>
+  <ul>
+    <li><a href=”/”>Home</a></li>
+    <li><a href=”/about”>About</a></li>
+    <li><a href=”/resume”>Resume</a></li>
+    <li><a href=”/blog”>Blog</a></li>
+  </ul>
+</nav>
+<div class=”container”>
+  <div class=”blurb”>
+    <h1>Hi, I am Danyiel Colin!</h1>
+    <p>This is my first page for my personal website!</a></p>
+  </div>
+</div>
+<footer>
+<ul>
+  <li><a href=”mailto:danyiel5978@gmail.com”>Send mail</a></li>
+</ul>
+</footer>
+
+<h2>A diagram</h2>
+
+<pre class="mermaid">flowchart LR
+  A(["Research Notes"]) -->B(["Pensées"])
+  B --> A
+  B --> C(["Antología asíncrona"])
+  click A "https://www.github.com/ResearchNotes" "ResearchNotes"
+  click B "https://danescher98.github.io/Thoughts/" "Thoughts"
+  click C "https://danescher98.github.io/ShortStories/" "ShortStories"
+</pre><hr/>
+
+
+</body>
 </html>
