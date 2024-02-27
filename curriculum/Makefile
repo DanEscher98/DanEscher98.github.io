@@ -1,9 +1,10 @@
-TARGET		= Curriculum
+TARGET		= cv_dev
 TEMPLATES 	= Preamble_CV.tex
 FLAGS  		= --interaction=nonstopmode
 
 $(TARGET).pdf : $(TARGET).tex $(TEMPLATES)
-	pdflatex $(TARGET).tex $(FLAGS) 1> /dev/null
+	pdflatex $(TARGET).tex $(FLAGS) -output-directory=build 1> /dev/null
+	cp $(TARGET).pdf ~/Downloads/DanielSanchezCV.pdf
 
 open: $(TARGET).pdf
 	evince $(TARGET).pdf
